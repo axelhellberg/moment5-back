@@ -7,6 +7,13 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST, GET, DELETE, PUT');
 header('Access-Control-Allow-Headers: Access-Control-Allow-Headers, Content-Type, Access-Control-Allow-Methods, Authorization, X-Requested-With');
 
+// GET http://axelhellberg.se/courses/api
+// GET http://axelhellberg.se/courses/api?id=258
+// POST http://axelhellberg.se/courses/api body: { "code":"coursecode", "name":"coursename", "progress":"A", "syllabus":"http://miun.se" }
+// PUT http://axelhellberg.se/courses/api body: { "id":"258", "code":"coursecode2", "name":"coursename2", "progress":"B", "syllabus":"http://miun.se" }
+// DELETE http://axelhellberg.se/courses/api body: { "id":"258" }
+
+
 $method = $_SERVER['REQUEST_METHOD']; // variable for request method
 
 $courses = new Course(); // initialize new course class object
