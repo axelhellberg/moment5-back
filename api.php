@@ -11,8 +11,7 @@ header('Access-Control-Allow-Headers: Access-Control-Allow-Headers, Content-Type
 // GET http://axelhellberg.se/courses/api?id=258
 // POST http://axelhellberg.se/courses/api body: { "code":"coursecode", "name":"coursename", "progress":"A", "syllabus":"http://miun.se" }
 // PUT http://axelhellberg.se/courses/api body: { "id":"258", "code":"coursecode2", "name":"coursename2", "progress":"B", "syllabus":"http://miun.se" }
-// DELETE http://axelhellberg.se/courses/api body: { "id":"258" }
-
+// DELETE http://axelhellberg.se/courses/api body: 258
 
 $method = $_SERVER['REQUEST_METHOD']; // variable for request method
 
